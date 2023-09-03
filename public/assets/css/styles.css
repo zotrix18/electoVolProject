@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    background-color: rgb(246,254,255);
+}
+
+.img-style{
+    min-width: 90%;
+}
+
+
+.titulo{
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    
+}
+
+/* usado en el eslogan */
+.subtitulo{
+    color: white;
+    font-size: 2vw;
+    font-style: italic;
+    text-align: center;
+}
+
+/* para los encabezados secundarios en la parte de quienes somos*/
+.subtitle{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* animacion para el logo en la pagina principal */
+#color-changing-text {
+    animation: color-change 3s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: red; }
+    20%{ color: white;}
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    85% {color: black;}
+    100% { color: purple; }
+}
+
+/* titulo secundario en principal */
+.secundario{
+    margin-top: 2%;
+    font-size: 3vw;
+}
+
+/* separadores */
+.separador, .separador-1{
+    background-color: rgb(53, 34, 179); 
+    margin: 50px 0 50px 0;
+    height: 25px;
+}
+
+/* separadores */
+.separador-1{
+    background-color: rgb(53, 34, 179); 
+    height: 25px;
+    margin: 0 20vw 2vw 20vw;
+}
+
+/* color blanco de fondo para el navbar */
+.navbar-custom{
+    background-color:rgb(233, 233, 233);
+}
+
+/* color con blur para el subnav */
+.navbar-custom2{
+    background-color:rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+/* presentacion de texto centrado y en forma de columna */
+.introducing{
+    text-align: justify;
+    max-width: 50vw;
+    align-items: center;    
+    padding-left: 20vw;
+    max-width: 80%;
+}
+
+/* fondo contacto */
+#contacto{
+    background-color: rgb(88, 88, 244);
+}
+
+/* estilos de para el pie de pagina */
+.redes, .sitios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2vw;
+}
+
+/* estilos para los anchor */
+.redes a, .sitios a{
+    padding-bottom: 10px;
+    color:black;
+    text-decoration: none;
+}
+
+/* estilo para los anchor luego de hacer click */
+.form-check a:visited{
+    color:blue;
+}
+
+.texto-azul > p{
+    color:rgb(57, 57, 223) !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* efecto para las cartas */
+.card-img-top {
+    transition: transform 0.5s ease;
+}
+  
+/* efecto para las cartas */
+.card-img-top:hover {
+    transform: scale(1.2);
+}
+
+/* clase personalizada que escala al 40% */
+.w-40{
+    width: 40%;
+}
+  
+#scrollspyHeading4 > p{
+    padding-top: 3%;
+}
+
+/* h2 en los terminos y condiciones */
+.tyc-h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* reglas para los parrafos en las listas dentro de la clase introducing */
+.introducing ul li p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* reglas para el formulario */
+.forma{
+    padding: 3% 0 3% 25%;
+    max-width: 70%;
+}
+
+/* propiedades para efectos para efectos del boton enviar */
+.submit-boton {
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    position: relative;
+    border: 2px solid #318aac;
+    outline: 1px solid;
+    outline-color: rgba(49, 138, 172, 0.4);
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.submit-boton:hover {
+    box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px #fff;
+}
+
+/* propiedades de fuente para el footer */
+.anchorSeparador, .anchorSeparador-2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* reglas para los h4 en las clases redes y sitios */
+.redes h4, .sitios h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.mapita{
+    margin-left: 5vw;
+}
+
+.my-x{
+    margin-top: 10%;
+}
+
+@media (min-width: 992px) {
+    .listS{
+        justify-content: end!important;
+    }
+  }
+
+.sep{
+    margin-right: 25vw!important;
+    min-width: 500px!important;
+    margin-left: 25vw!important;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+}
+
+@media screen and (max-width: 700px) {
+    .sep {
+        margin-left: 10vw !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sep {
+        margin-left: 3vw !important;
+    }
+}
+
+.stacked-box{
+    text-align: center;
+    position: relative;
+    width: 15vw;
+    height: 5vw;
+    margin-top: 2vw;
+    margin-left: 10vw!important;
+
+}
+
+@media screen and (max-width: 990px) {
+    .stacked-box {
+        width: 40vw!important;
+        height: 10vw!important;
+    }
+}
