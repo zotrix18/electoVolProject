@@ -15,7 +15,15 @@
           <a class="anchorSeparador-2" href="<?=site_url('')?>">Principal</a>
           <a class="anchorSeparador-2" href="<?=site_url('nosotros')?>">Quienes Somos</a>
           <a class="anchorSeparador-2" href="<?=site_url('catalogo')?>">Catalogo de Productos</a>
-          <a class="anchorSeparador-2" href="<?=site_url('consulta')?>">Consultas</a>
+          <?php
+            $session=session();
+            //si esta logeado
+            if($session->has('usuario')){ ?>
+                <a class="anchorSeparador-2" href="<?=site_url('consulta')?>">Consultas</a>
+            <?php }else{ ?>
+                <a class="anchorSeparador-2" href="<?=site_url('contacto')?>">Contacto</a>
+            <?php } ?>
+          
           <a class="anchorSeparador-2" href="<?=site_url('comercializacion')?>">Comercializacion</a>
           <a class="anchorSeparador-2" href="<?=site_url('tyc')?>">Terminos y Condiciones</a>
         </div>
